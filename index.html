@@ -603,7 +603,11 @@
     0%, 100% { opacity: 0.3; transform: scaleY(1); }
     50% { opacity: 1; transform: scaleY(1.1); }
   }
-
+@keyframes shimmer {
+  0% { filter: drop-shadow(0 0 2px rgba(255,255,255,0.25)); }
+  50% { filter: drop-shadow(0 0 14px rgba(255,255,255,0.9)); }
+  100% { filter: drop-shadow(0 0 2px rgba(255,255,255,0.25)); }
+}
   /* Scroll reveal */
   .reveal {
     opacity: 0;
